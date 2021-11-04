@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Sign up</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+  background: #555;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <script type="text/javascript">
+                function onSubmit() {
+                    if (document.getElementById('password').value == 'cooljb117') {window.location.href = 'jbdocs_real.html'; }
+                    else{ alert('Please check your passcode and try again');}
+                }
+            </script>
+            <h1>
+                <a href="index.html">
+                    Back to home login
+                </a><br>
+                <a href="cooljb.html">
+                    Back to James Bond
+                </a>
+            </h1>
+            <fieldset><form class="hero-form" action="#">
+                     <div class="row-fluid">
+                             <label>Enter your passcode</label>
+                             <input autofocus autocomplete="off" type="password" name="password" maxlength="9"      class="span7" id="password" placeholder="Enter the password" required/>
+            
+                     </div>    
+            </form></fieldset>
+            <button class="btn btn-info btn-large span5" id="joe_btn" onclick="onSubmit()">Enter</button>
+        </div>
+    </body>
+</html>
